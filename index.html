@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="form-title"f>Formulário de Trocas</h1>
+        <form action="" class="form" id="form">
+            <div class="form-inner-container">
+                <div class="input-container">
+                    <label class="default-label" for="código-cliente">Código Cliente *</label>
+                    <input required class="default-input" placeholder="Código Cliente" id="código-cliente" type="text">
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="nome-cliente">Nome Cliente *</label>
+                    <input required class="default-input" type="text" id="nome-cliente" placeholder="Nome Cliente">
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="código-vendedor">Código Vendedor</label>
+                    <input required class="default-input" id="código-vendedor" type="text" placeholder="Código Vendedor">
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="nome-vendedor">Nome Vendedor *</label>
+                    <input required class="default-input" id="nome-vendedor" type="text" placeholder="Nome Vendedor">
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="número-nfe">Número NFE</label>
+                    <input required class="default-input" type="text" id="número-nfe" placeholder="Número NFE">
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="data">Data *</label>
+                    <input required class="default-input" type="date" id="data" placeholder="">
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="natureza-do-problema">Natureza do problema *</label>
+                    <select required name="" class="default-input" id="">
+                        <option disabled selected value="" hidden></option>
+                        <option value="mercadoria-incorreta">Mercadoria incorreta</option>
+                        <option value="mercadoria-danificada">Mercadoria danificada</option>
+                        <option value="preço-incorreto">Preço incorreto</option>
+                        <option value="mercadoria-faltando">Mercadoria faltando</option>
+                        <option value="mercadoria-vendida-incorretamente">Mercadoria vendida incorretamente</option>
+                        <option value="prazo-pagamento-incorreto">Prazo de pagamento incorreto</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label class="default-label" for="solução-problema">Solução problema *</label>
+                    <select required name="" class="default-input" id="">
+                        <option hidden disabled selected value=""></option>
+                        <option value="reposicao-mercadoria">Reposição em mercadoria</option>
+                        <option value="desconto-duplicata">Desconto duplicata</option>
+                        <option value="refazer-nota">Refazer nota</option>
+                    </select>
+                </div>
+                <div class="input-container-mercadoria input2">
+                    <label class="default-label label2" for="mercadoria-devolvida">Mercadoria devolvida</label>
+                    <textarea name="mercadoria" id="mercadoria-devolvida" placeholder="Código / Descrição / Quantidade"></textarea>
+                </div>
+                <div class="input-container-reposição input2">
+                   <label class="default-label label2" for="reposição">Reposição</label>
+                   <textarea name="reposicao" id="reposição" placeholder="Código / Descrição / Quantidade"></textarea>
+                </div>
+                <div class="input-container-observacao input2">
+                    <label class="default-label label2" for="observações">Observações</label>
+                    <textarea name="observacao" id="observações"></textarea>
+                </div>
+            </div>
+            <button class="submit-btn" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
